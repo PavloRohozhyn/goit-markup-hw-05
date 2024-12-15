@@ -494,6 +494,7 @@ address {
     align-items: baseline;
 }
 
+/* Footer - logo */
 .footer-left {
     margin-right: 120px;
 }
@@ -530,6 +531,7 @@ address {
     max-width: 264px;
 }
 
+/* Footer - social */
 .footer-socials-text {
     font-weight: 500;
     font-size: 16px;
@@ -569,10 +571,66 @@ address {
     fill: var(--cloud);
 }
 
+/* Footer - subscriber */
+
+.footer-subscriber {}
+
+.footer-subscriber-title {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.footer-form {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-form-label {}
+
+.footer-form-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.footer-form-input::placeholder {
+    color: #ffffff;
+}
+
+.footer-form-btn {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    background-color: #4D5AE5;
+    border-radius: 4px;
+}
+
+.footer-form-btn-icon {
+    margin-left: 16px;
+}
+
 /* #endregion */
 
 
-/* #region Form */
+/* #region Modal Form */
 
 .backdrop {
     position: fixed;
@@ -626,12 +684,13 @@ address {
 .modal-btn:hover {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    background-color: rgb(var(--ocean));
+    background-color: #404bbf;
+    ;
     border: none;
 }
 
 .modal-btn:focus {
-    background-color: rgb(var(--ocean));
+    background-color: #404bbf;
     border: none;
 }
 
@@ -716,5 +775,57 @@ address {
 .modal-form-textarea:hover {
     border-color: #4D5AE5;
 }
+
+.modal-form-textarea:focus {
+    border-color: #4D5AE5;
+}
+
+.modal-form-agr {
+    margin-bottom: 24px;
+}
+
+.modal-form-agr-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+
+.modal-form-agr-span {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition:
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+
+.modal-form-agr-icon {}
+
+.modal-form-agr-link {
+    color: #4d5ae5;
+}
+
+.modal-form-btn {
+    min-width: 169px;
+    height: 56px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 
 /* #endregion */
