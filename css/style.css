@@ -639,40 +639,44 @@ address {
     width: 100%;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 2;
-
+    transition:
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
     position: absolute;
+    max-width: 408px;
+    min-height: 584px;
     top: 50%;
     left: 50%;
     transform: translateX(50%) translateY(50%);
     transform: translate(-50%, -50%);
     border-radius: 4px;
-    max-width: 408px;
-    min-height: 584px;
     background-color: var(--white);
     padding: 72px 24px 24px;
     font-size: 32px;
     text-align: center;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    box-shadow:
+        0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1px 3px 0 rgba(0, 0, 0, 0.12),
+        0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: var(--dairy);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:
+        transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 24px;
     right: 24px;
     width: 24px;
     height: 24px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 0;
+    border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #e7e9fc;
     color: rgb(var(--cornflower));
@@ -684,21 +688,22 @@ address {
 .modal-btn:hover {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    background-color: #404bbf;
-    ;
-    border: none;
 }
 
+.modal-btn:hover,
 .modal-btn:focus {
-    background-color: #404bbf;
     border: none;
+    color: var(--white);
+    background-color: var(--ocean);
+}
+
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:focus .modal-btn-icon {
+    fill: var(--white);
 }
 
 .modal-btn-icon {
-    stroke: currentColor;
-    border-radius: 4px;
-    width: 24px;
-    height: 24px;
+    fill: currentColor;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -711,13 +716,14 @@ address {
     text-align: center;
     color: var(--navy-blue);
     margin-bottom: 16px;
-
 }
 
 .modal-form {}
 
 .modal-form-field {
     margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
 }
 
 .modal-form-label {
@@ -738,13 +744,14 @@ address {
 .modal-form-input {
     width: 100%;
     height: 40px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     outline: transparent;
     background-color: transparent;
     padding-left: 38px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition:
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-color: #4D5AE5;
+    border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
 .modal-form-icon {
@@ -784,6 +791,16 @@ address {
     margin-bottom: 24px;
 }
 
+.modal-form-agr-dchk:checked+.modal-form-agr-label .modal-form-agr-span {
+    background-color: rgb(var(--cl-ocean));
+    border: none;
+    fill: var(--cloud);
+}
+
+.modal-form-agr-dchk:checked+.modal-form-agr-label .modal-form-agr-span {
+    visibility: visible;
+}
+
 .modal-form-agr-label {
     font-size: 12px;
     line-height: 1.17;
@@ -810,9 +827,16 @@ address {
 
 .modal-form-agr-link {
     color: #4d5ae5;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
 }
 
 .modal-form-btn {
+    display: block;
     min-width: 169px;
     height: 56px;
     font-family: "Roboto", sans-serif;
@@ -825,6 +849,8 @@ address {
     background-color: #4D5AE5;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 16px 32px;
+    margin: 0 auto;
 }
 
 
