@@ -55,7 +55,6 @@
         </address>
       </div>
     </header>
-    <!-- Main -->
     <main>
       <!-- Hero (section 1) -->
       <section class="section-hero">
@@ -468,5 +467,77 @@
 
       </div>
     </footer>
+    <!-- Modal window -->
+    <div class="backdrop">
+      <div class="modal">
+        <!-- close icon -->
+        <button class="modal-btn" type="button">
+          <svg class="modal-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+        <!-- end close icon -->
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <!-- form -->
+        <form class="modal-form" name="recontact-form">
+          <!-- name -->
+          <div class="modal-form-field">
+            <label class="modal-form-label" data="user-name">Name</label>
+            <div class="modal-form-wrapper">
+              <input class="modal-form-input" type="text" id="user-name" name="uname" />
+              <svg class="modal-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-modal-person"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- end name -->
+          <!-- phone -->
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-phone">Name</label>
+            <div class="modal-form-wrapper">
+              <input class="modal-form-input" type="text" id="user-phone" name="uphone" />
+              <svg class="modal-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-modal-phone"></use>
+              </svg>
+            </div>
+          </div> 
+          <!-- end phone -->
+          <!-- email -->
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-email">Tel</label>
+            <div class="modal-form-wrapper">
+              <input class="modal-form-input" type="text" id="user-email" name="uemail" />
+              <svg class="modal-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-modal-email"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- end email -->
+          <!-- comment -->
+          <div class="modal-form-field">
+            <label class="modal-form-label" for="user-comment">Email</label>
+            <textarea id="user-comment" name="ucomment"></textarea>
+          </div>
+          <!-- end comment -->
+
+          <!-- agreement -->
+           <div class="modal-form-agreement">
+            <input class="" type="checkbox" />
+            <label class="modal-form-agreement-desc">
+              <span class="modal-form-checkbox">
+                <svg class="modal-form-agreement-icon">
+                  <use></use>
+                </svg>
+              </span>
+              some text <a href="#" target="_blank" rel="noopener noreferrer">link</a>
+            </label>
+           </div>
+          <!-- end agreement -->
+
+          <button>Send</button>
+        </form>
+        <!-- end form -->
+      </div>
+    </div>
   </body>
 </html>
