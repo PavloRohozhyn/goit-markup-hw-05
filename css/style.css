@@ -645,11 +645,12 @@ address {
 
 .modal {
     position: absolute;
-    max-width: 408px;
-    min-height: 584px;
     top: 50%;
     left: 50%;
     transform: translateX(50%) translateY(50%);
+    max-width: 408px;
+    min-height: 584px;
+    overflow-y: auto;
     transform: translate(-50%, -50%);
     border-radius: 4px;
     background-color: var(--white);
@@ -807,7 +808,7 @@ address {
 }
 
 .modal-form-agr-dchk:checked+.modal-form-agr-label .modal-form-agr-span {
-    background-color: rgb(var(--cl-ocean));
+    background-color: rgb(var(--ocean));
     border: none;
     fill: var(--cloud);
 }
