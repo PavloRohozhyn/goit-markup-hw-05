@@ -422,7 +422,7 @@
     <!-- footer -->
     <footer class="footer">
       <div class="container container-footer">
-
+        <!-- logo -->
         <div class="footer-left">
           <a class="footer-logo" href="./index.html">Web<span class="footer-logo-second">Studio</span></a>
           <p class="footer-desc">
@@ -430,7 +430,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-
+        <!-- social -->
         <div class="footer-socials">
           <p class="footer-socials-text">Social media</p>
           <ul class="footer-socials-list">
@@ -464,7 +464,21 @@
             </li>
           </ul>
         </div>
-
+        <!-- form subscriber -->
+        <div class="footer-subscriber">
+          <p class="footer-subscriber-title">Subscribe</p>
+          <form class="footer-form">
+            <label class="footer-form-label">
+              <input class="footer-form-input" type="email" name="email"  placeholder="E-mail" />
+            </label>
+            <button class="footer-form-btn" type="submit">
+              Subscribe
+              <svg class="footer-form-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-footer-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- Modal window -->
@@ -482,10 +496,10 @@
         <form class="modal-form" name="recontact-form">
           <!-- name -->
           <div class="modal-form-field">
-            <label class="modal-form-label" data="user-name">Name</label>
+            <label class="modal-form-label" for="user-name">Name</label>
             <div class="modal-form-wrapper">
-              <input class="modal-form-input" type="text" id="user-name" name="uname" />
-              <svg class="modal-form-icon" width="24" height="24">
+              <input class="modal-form-input" type="text" id="user-name" name="user-name" />
+              <svg class="modal-form-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-modal-person"></use>
               </svg>
             </div>
@@ -493,10 +507,10 @@
           <!-- end name -->
           <!-- phone -->
           <div class="modal-form-field">
-            <label class="modal-form-label" for="user-phone">Name</label>
+            <label class="modal-form-label" for="user-phone">Phone</label>
             <div class="modal-form-wrapper">
-              <input class="modal-form-input" type="text" id="user-phone" name="uphone" />
-              <svg class="modal-form-icon" width="24" height="24">
+              <input class="modal-form-input" type="text" id="user-phone" name="user-phone" />
+              <svg class="modal-form-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-modal-phone"></use>
               </svg>
             </div>
@@ -504,10 +518,10 @@
           <!-- end phone -->
           <!-- email -->
           <div class="modal-form-field">
-            <label class="modal-form-label" for="user-email">Tel</label>
+            <label class="modal-form-label" for="user-email">Email</label>
             <div class="modal-form-wrapper">
-              <input class="modal-form-input" type="text" id="user-email" name="uemail" />
-              <svg class="modal-form-icon" width="24" height="24">
+              <input class="modal-form-input" type="text" id="user-email" name="user-email" />
+              <svg class="modal-form-icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-modal-email"></use>
               </svg>
             </div>
@@ -515,25 +529,24 @@
           <!-- end email -->
           <!-- comment -->
           <div class="modal-form-field">
-            <label class="modal-form-label" for="user-comment">Email</label>
-            <textarea id="user-comment" name="ucomment"></textarea>
+            <label class="modal-form-label" for="user-comment">Comment</label>
+            <textarea class="modal-form-textarea" id="user-comment" name="user-comment" placeholder="Text input"></textarea>
           </div>
           <!-- end comment -->
-
           <!-- agreement -->
-           <div class="modal-form-agreement">
-            <input class="" type="checkbox" />
-            <label class="modal-form-agreement-desc">
-              <span class="modal-form-checkbox">
-                <svg class="modal-form-agreement-icon">
+           <div class="modal-form-agr">
+            <input class="visually-hidden" type="checkbox"  id="user-privacy" value="true" name="user-privacy" />
+            <label class="modal-form-agr-desc"  for="user-privacy">
+              I accept the terms and conditions of the
+              <span class="modal-form-agr-checkbox">
+                <svg class="modal-form-agr-icon">
                   <use></use>
                 </svg>
               </span>
-              some text <a href="#" target="_blank" rel="noopener noreferrer">link</a>
+              some text <a class="modal-form-agr-link" href="#" target="_blank" rel="noopener noreferrer">link</a>
             </label>
            </div>
           <!-- end agreement -->
-
           <button>Send</button>
         </form>
         <!-- end form -->
