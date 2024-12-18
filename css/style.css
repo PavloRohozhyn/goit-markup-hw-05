@@ -846,15 +846,12 @@ address {
 }
 
 .modal-form-agr-label {
-    display: inline-flex;
-    align-items: flex-end;
-    gap: 0.5rem;
-    font-size: 0.75rem;
-    font-weight: 400;
+    cursor: pointer;
+    user-select: none;
+    font-size: 12px;
     line-height: 1.17;
-    letter-spacing: 0.48px;
+    letter-spacing: 0.04em;
     color: var(--light-slate);
-
 }
 
 .modal-form-agr-span {
@@ -868,6 +865,10 @@ address {
     fill: transparent;
     margin-right: 8px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-agr-icon {
+    /* fill: var(--cloud); */
 }
 
 .modal-form-agr-link {
@@ -884,9 +885,7 @@ address {
     letter-spacing: 0.48px;
 }
 
-.modal-form-agr-icon {
-    fill: var(--cloud);
-}
+
 
 /* FORM BUTTON */
 .modal-form-btn {
